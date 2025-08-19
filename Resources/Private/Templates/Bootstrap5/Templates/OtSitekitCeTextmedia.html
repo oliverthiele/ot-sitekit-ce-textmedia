@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<head>
+    <meta charset="utf-8">
+    <title>Template: OtSitekitCeTextmedia</title>
+</head>
+<body>
+
+<f:layout name="Default"/>
+
+<f:section name="Header"/>
+
+<f:section name="Main">
+    <f:switch expression="{data.ot_layout}">
+        <f:case value="50-media-50-text">
+            <div class="row">
+                <div class="col-md-6">
+                    <f:render section="Media" arguments="{_all}" />
+                </div>
+                <div class="col-md-6 mt-3 mt-md-0">
+                    <f:render partial="Header" section="Main" arguments="{data : data}"/>
+                    <f:render section="Text" arguments="{_all}" />
+                </div>
+            </div>
+        </f:case>
+        <f:case value="50-text-50-media">
+            <div class="row">
+                <div class="col-md-6 order-md-last">
+                    <f:render section="Media" arguments="{_all}" />
+                </div>
+                <div class="col-md-6 order-md-first mt-3 mt-md-0">
+                    <f:render partial="Header" section="Main" arguments="{data : data}"/>
+                    <f:render section="Text" arguments="{_all}"/>
+                </div>
+            </div>
+        </f:case>
+    </f:switch>
+</f:section>
+
+
+<f:section name="Media">
+    <f:for each="{files}" as="file">
+        <f:render partial="Media/Media" arguments="{files : files}"/>
+    </f:for>
+</f:section>
+
+<f:section name="Text">
+    {data.bodytext -> f:format.html()}
+    <f:if condition="{irreButtons}">
+        <f:render partial="IrreButtons" section="Main" arguments="{data : data, irreButtons : irreButtons}"/>
+    </f:if>
+</f:section>
+</body>
+</html>
