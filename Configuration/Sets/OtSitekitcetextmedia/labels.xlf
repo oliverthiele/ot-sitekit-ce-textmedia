@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file source-language="en" datatype="plaintext"
+		  original="EXT:ot_sitekitcetextmedia/Configuration/Sets/OtSitekitcetextmedia/labels.xlf"
+		  date="2025-08-12T13:04:00Z" product-name="ot-sitekit-ce-textmedia">
+		<header/>
+		<body>
+			<trans-unit id="label" resname="label">
+				<source><![CDATA[Content Element: Text & Media]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

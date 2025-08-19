@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en"
+		  datatype="plaintext"
+		  original="EXT:ot_sitekitcetextmedia/Resources/Private/Language/locallang_be.xlf"
+		  date="2025-06-30T14:35:46Z"
+		  product-name="ot-sitekit-ce-textmedia">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.CType.label" resname="tt_content.CType.label">
+				<source><![CDATA[Text & Media]]></source>
+			</trans-unit>
+			<trans-unit id="tt_content.CType.description" resname="tt_content.CType.description">
+				<source>Displays an image next to a text.</source>
+			</trans-unit>
+			<trans-unit id="tt_content.ot_layout" resname="tt_content.ot_layout">
+				<source>Layout</source>
+			</trans-unit>
+			<trans-unit id="tt_content.ot_layout.50-text-50-media" resname="tt_content.ot_layout.50-text-50-media">
+				<source>Media Right (50% Text - 50% Media)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.ot_layout.50-media-50-text" resname="tt_content.ot_layout.50-media-50-text">
+				<source>Media Left (50% Media - 50% Text)</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

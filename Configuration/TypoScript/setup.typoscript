@@ -1,0 +1,24 @@
+tt_content.ot_sitekitcetextmedia =< lib.sitekitContentElement
+tt_content.ot_sitekitcetextmedia {
+  templateName = OtSitekitCeTextmedia
+  templateRootPaths {
+    20 = EXT:ot_sitekitcetextmedia/Resources/Private/Templates/{$sitekit.frameworks.frontend.directory}/Templates/
+  }
+
+  partialRootPaths {
+    20 = EXT:ot_sitekitcetextmedia/Resources/Private/Templates/{$sitekit.frameworks.frontend.directory}/Partials/
+  }
+
+  layoutRootPaths {
+    20 = EXT:ot_sitekitcetextmedia/Resources/Private/Templates/{$sitekit.frameworks.frontend.directory}/Layouts/
+  }
+
+  dataProcessing {
+    10 = files
+    10 {
+      references {
+        fieldName = assets
+      }
+    }
+  }
+}
