@@ -20,12 +20,16 @@
 				<target>Layout</target>
 			</trans-unit>
 			<trans-unit id="tt_content.ot_layout.50-text-50-media" resname="tt_content.ot_layout.50-text-50-media" approved="yes">
-				<source>Media right (50% Text - 50% Media)</source>
-				<target>Medien rechts (50% Text - 50% Medien)</target>
+				<source>Media right (50 % Text – 50 % Media)</source>
+				<target>Medien rechts (50 % Text – 50 % Medien)</target>
 			</trans-unit>
 			<trans-unit id="tt_content.ot_layout.50-media-50-text" resname="tt_content.ot_layout.50-media-50-text" approved="yes">
-				<source>Media left (50% Media - 50% Text)</source>
-				<target>Medien links (50% Medien - 50% Text)</target>
+				<source>Media left (50 % Media – 50 % Text)</source>
+				<target>Medien links (50 % Medien – 50 % Text)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.ot_layout.100-media-100-text" resname="tt_content.ot_layout.100-media-100-text" approved="yes">
+				<source>Media Top (100 % Media – 100 % Text)</source>
+				<target>Medien Oben (100 % Medien – 100 % Text)</target>
 			</trans-unit>
 		</body>
 	</file>

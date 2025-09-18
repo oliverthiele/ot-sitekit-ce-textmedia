@@ -35,18 +35,25 @@
                 </div>
             </div>
         </f:case>
+        <f:case value="100-media-100-text">
+            <f:render section="Media" arguments="{_all}" />
+            <f:render partial="Header" section="Main" arguments="{data : data}"/>
+            <f:render section="Text" arguments="{_all}" />
+        </f:case>
     </f:switch>
 </f:section>
 
 
 <f:section name="Media">
     <f:for each="{files}" as="file">
-        <f:render partial="Media/Media" arguments="{files : files}"/>
+        <f:render partial="Media/Media" arguments="{files : files, data : data}"/>
     </f:for>
 </f:section>
 
 <f:section name="Text">
-    {data.bodytext -> f:format.html()}
+    <f:if condition="{data.bodytext -> f:format.trim()} != ''">
+        {data.bodytext -> f:format.html()}
+    </f:if>
     <f:if condition="{irreButtons}">
         <f:render partial="IrreButtons" section="Main" arguments="{data : data, irreButtons : irreButtons}"/>
     </f:if>
