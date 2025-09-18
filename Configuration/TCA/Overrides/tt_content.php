@@ -26,6 +26,10 @@ $GLOBALS['TCA']['tt_content']['types']['ot_sitekitcetextmedia']['columnsOverride
                     'label' => $ll . 'tt_content.ot_layout.50-media-50-text',
                     'value' => '50-media-50-text',
                 ],
+                [
+                    'label' => $ll . 'tt_content.ot_layout.100-media-100-text',
+                    'value' => '100-media-100-text',
+                ],
             ],
         ],
     ],
