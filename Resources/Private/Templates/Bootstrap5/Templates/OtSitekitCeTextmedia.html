@@ -16,10 +16,10 @@
     <f:switch expression="{data.ot_layout}">
         <f:comment><!-- Media top --></f:comment>
         <f:case value="100-media-100-text">
-            <f:variable name="numColumns" value="{xs:1}"/>
+            <f:variable name="gridColumns" value="{xs:12}"/>
             <f:render section="Media" arguments="{_all}" />
             <div class="mt-3">
-                <f:render partial="Header" section="Main" arguments="{data : data, numColumns : numColumns}"/>
+                <f:render partial="Header" section="Main" arguments="{data: data, gridColumns: gridColumns}"/>
             </div>
             <f:render section="Text" arguments="{_all}" />
         </f:case>
@@ -27,39 +27,39 @@
         <f:comment><!-- Media left --></f:comment>
 
         <f:case value="50-media-50-text">
-            <f:variable name="numColumns" value="{xs:1,md:2}"/>
+            <f:variable name="gridColumns" value="{xs:12,md:6}"/>
             <div class="row">
                 <div class="col-md-6">
                     <f:render section="Media" arguments="{_all}" />
                 </div>
                 <div class="col-md-6 mt-3 mt-md-0">
-                    <f:render partial="Header" section="Main" arguments="{data : data, numColumns : numColumns}"/>
+                    <f:render partial="Header" section="Main" arguments="{data: data, gridColumns: gridColumns}"/>
                     <f:render section="Text" arguments="{_all}" />
                 </div>
             </div>
         </f:case>
 
         <f:case value="33-media-66-text">
-            <f:variable name="numColumns" value="{xs:1,md:3}"/>
+            <f:variable name="gridColumns" value="{xs:12,md:4}"/>
             <div class="row">
                 <div class="col-md-4">
                     <f:render section="Media" arguments="{_all}" />
                 </div>
                 <div class="col-md-8 mt-3 mt-md-0">
-                    <f:render partial="Header" section="Main" arguments="{data : data, numColumns : numColumns}"/>
+                    <f:render partial="Header" section="Main" arguments="{data: data, gridColumns: gridColumns}"/>
                     <f:render section="Text" arguments="{_all}" />
                 </div>
             </div>
         </f:case>
 
         <f:case value="25-media-75-text">
-            <f:variable name="numColumns" value="{xs:1,md:4}"/>
+            <f:variable name="gridColumns" value="{xs:12,md:3}"/>
             <div class="row">
                 <div class="col-md-3">
                     <f:render section="Media" arguments="{_all}" />
                 </div>
                 <div class="col-md-9 mt-3 mt-md-0">
-                    <f:render partial="Header" section="Main" arguments="{data : data, numColumns : numColumns}"/>
+                    <f:render partial="Header" section="Main" arguments="{data: data, gridColumns: gridColumns}"/>
                     <f:render section="Text" arguments="{_all}" />
                 </div>
             </div>
@@ -68,39 +68,44 @@
         <f:comment><!-- Media right --></f:comment>
 
         <f:case value="50-text-50-media">
-            <f:variable name="numColumns" value="{xs:1,md:2}"/>
+            <f:variable name="gridColumns" value="{xs:12,md:6}"/>
+
+            <f:comment> <!-- <![CDATA[
+             <f:variable name="numColumns" value="{xs:1,md:2}"/>
+                gridColumns: gridColumns,
+            ]]>	--> </f:comment>
             <div class="row">
                 <div class="col-md-6 order-md-last">
                     <f:render section="Media" arguments="{_all}" />
                 </div>
                 <div class="col-md-6 order-md-first mt-3 mt-md-0">
-                    <f:render partial="Header" section="Main" arguments="{data : data, numColumns : numColumns}"/>
+                    <f:render partial="Header" section="Main" arguments="{data: data, gridColumns: gridColumns}"/>
                     <f:render section="Text" arguments="{_all}"/>
                 </div>
             </div>
         </f:case>
 
         <f:case value="66-text-33-media">
-            <f:variable name="numColumns" value="{xs:1,md:3}"/>
+            <f:variable name="gridColumns" value="{xs:12,md:4}"/>
             <div class="row">
                 <div class="col-md-4 order-md-last">
                     <f:render section="Media" arguments="{_all}" />
                 </div>
                 <div class="col-md-8 order-md-first mt-3 mt-md-0">
-                    <f:render partial="Header" section="Main" arguments="{data : data, numColumns : numColumns}"/>
+                    <f:render partial="Header" section="Main" arguments="{data: data, gridColumns: gridColumns}"/>
                     <f:render section="Text" arguments="{_all}"/>
                 </div>
             </div>
         </f:case>
 
         <f:case value="75-text-25-media">
-            <f:variable name="numColumns" value="{xs:1,md:4}"/>
+            <f:variable name="gridColumns" value="{xs:12,md:3}"/>
             <div class="row">
                 <div class="col-md-3 order-md-last">
                     <f:render section="Media" arguments="{_all}" />
                 </div>
                 <div class="col-md-9 order-md-first mt-3 mt-md-0">
-                    <f:render partial="Header" section="Main" arguments="{data : data, numColumns : numColumns}"/>
+                    <f:render partial="Header" section="Main" arguments="{data: data, gridColumns: gridColumns}"/>
                     <f:render section="Text" arguments="{_all}"/>
                 </div>
             </div>
@@ -114,9 +119,9 @@
 <f:section name="Media">
     <f:for each="{files}" as="file">
         <f:render partial="Media/Media" arguments="{
-            files: files,
+            file: file,
             maxImageWidth: maxImageWidth,
-            numColumns: numColumns,
+            gridColumns: gridColumns,
             data: data,
             cropVariants: cropVariants,
             directParent: directParent,
@@ -139,7 +144,7 @@
         </f:if>
     </f:if>
     <f:if condition="{irreButtons}">
-        <f:render partial="IrreButtons" section="Main" arguments="{data : data, irreButtons : irreButtons}"/>
+        <f:render partial="IrreButtons" section="Main" arguments="{data: data, irreButtons: irreButtons}"/>
     </f:if>
 </f:section>
 </body>
