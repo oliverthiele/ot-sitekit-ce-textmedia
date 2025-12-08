@@ -1,1 +1,3 @@
 name: oliverthiele/ot-sitekit-ce-textmedia
+dependencies:
+  - oliverthiele/ot-sitekit-base
