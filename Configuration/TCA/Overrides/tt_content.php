@@ -16,20 +16,49 @@ $GLOBALS['TCA']['tt_content']['types']['ot_sitekitcetextmedia']['columnsOverride
     ],
     'ot_layout' => [
         'label' => $ll . 'tt_content.ot_layout',
+        'description' => $ll . 'tt_content.ot_layout.description',
         'config' => [
             'items' => [
                 [
-                    'label' => $ll . 'tt_content.ot_layout.50-text-50-media',
-                    'value' => '50-text-50-media',
+                    'label' => $ll . 'tt_content.ot_layout.100-media-100-text',
+                    'value' => '100-media-100-text',
+                    'group' => 'group-media-top',
                 ],
                 [
                     'label' => $ll . 'tt_content.ot_layout.50-media-50-text',
                     'value' => '50-media-50-text',
+                    'group' => 'group-media-left',
                 ],
                 [
-                    'label' => $ll . 'tt_content.ot_layout.100-media-100-text',
-                    'value' => '100-media-100-text',
+                    'label' => $ll . 'tt_content.ot_layout.33-media-66-text',
+                    'value' => '33-media-66-text',
+                    'group' => 'group-media-left',
                 ],
+                [
+                    'label' => $ll . 'tt_content.ot_layout.25-media-75-text',
+                    'value' => '25-media-75-text',
+                    'group' => 'group-media-left',
+                ],
+                [
+                    'label' => $ll . 'tt_content.ot_layout.50-text-50-media',
+                    'value' => '50-text-50-media',
+                    'group' => 'group-media-right',
+                ],
+                [
+                    'label' => $ll . 'tt_content.ot_layout.66-text-33-media',
+                    'value' => '66-text-33-media',
+                    'group' => 'group-media-right',
+                ],
+                [
+                    'label' => $ll . 'tt_content.ot_layout.75-text-25-media',
+                    'value' => '75-text-25-media',
+                    'group' => 'group-media-right',
+                ],
+            ],
+            'itemGroups' => [
+                'group-media-top' => $ll . 'mediaTop.label',
+                'group-media-left' => $ll . 'mediaLeft.label',
+                'group-media-right' => $ll . 'mediaRight.label',
             ],
         ],
     ],
@@ -38,7 +67,7 @@ $GLOBALS['TCA']['tt_content']['types']['ot_sitekitcetextmedia']['columnsOverride
 $GLOBALS['TCA']['tt_content']['types']['ot_sitekitcetextmedia']['showitem'] = '
     --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
         --palette--;;general,
-        --palette--;;headers, bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+        --palette--;;headers, bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,ot_text_columns,
         --palette--;LLL:EXT:ot_irrebuttons/Resources/Private/Language/locallang_be.xlf:tx_otirrebuttons.palette.label;irreButtons,
         tx_otirrebuttons_domain_model_buttons,
     --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:media,

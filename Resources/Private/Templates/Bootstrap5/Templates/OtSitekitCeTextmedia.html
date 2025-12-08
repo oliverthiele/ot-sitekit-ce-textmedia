@@ -52,7 +52,16 @@
 
 <f:section name="Text">
     <f:if condition="{data.bodytext -> f:format.trim()} != ''">
-        {data.bodytext -> f:format.html()}
+        <f:if condition="{data.ot_text_columns} != ''">
+            <f:then>
+                <div class="auto-column-text">
+                    {data.bodytext -> f:format.html()}
+                </div>
+            </f:then>
+            <f:else>
+                {data.bodytext -> f:format.html()}
+            </f:else>
+        </f:if>
     </f:if>
     <f:if condition="{irreButtons}">
         <f:render partial="IrreButtons" section="Main" arguments="{data : data, irreButtons : irreButtons}"/>
