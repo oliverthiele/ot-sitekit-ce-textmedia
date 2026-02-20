@@ -1,0 +1,4 @@
+elements:
+  - ctype: ot_sitekitcetextmedia
+    groups: [group_content_wide, group_content_small]
+    grid: { minCols: 3, requiresFullWidth: false }
