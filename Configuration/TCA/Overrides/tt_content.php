@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use OliverThiele\OtSitekitbase\Backend\Preview\GenericPreviewRenderer;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
@@ -98,3 +99,5 @@ ExtensionManagementUtility::addTcaSelectItem(
     'text',
     'before'
 );
+
+$GLOBALS['TCA']['tt_content']['types']['ot_sitekitcetextmedia']['previewRenderer'] = GenericPreviewRenderer::class;

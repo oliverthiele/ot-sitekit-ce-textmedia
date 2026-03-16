@@ -13,6 +13,12 @@ tt_content.ot_sitekitcetextmedia {
     20 = EXT:ot_sitekitcetextmedia/Resources/Private/Templates/{$sitekit.frameworks.frontend.directory}/Layouts/
   }
 
+  settings {
+    otSitekitCeTextmedia {
+      verticalAlign = {$otSitekitCeTextmedia.verticalAlign}
+    }
+  }
+
   dataProcessing {
     10 = files
     10 {
