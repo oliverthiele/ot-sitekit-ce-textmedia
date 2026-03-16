@@ -16,7 +16,8 @@
 	],
 	"require": {
 		"typo3/cms-core": "^13.4",
-		"oliverthiele/ot-sitekit-base": "*"
+		"oliverthiele/ot-sitekit-base": "*",
+		"oliverthiele/ot-ceheader": "*"
 	},
 	"require-dev": {
 		"roave/security-advisories": "dev-latest"

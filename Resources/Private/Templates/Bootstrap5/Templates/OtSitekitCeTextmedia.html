@@ -19,7 +19,7 @@
             <f:variable name="gridColumns" value="{xs:12}"/>
             <f:render section="Media" arguments="{_all}" />
             <div class="mt-3">
-                <f:render partial="Header" arguments="{data: data, gridColumns: gridColumns}"/>
+                <f:render partial="Header/All" arguments="{data: data, gridColumns: gridColumns}"/>
             </div>
             <f:render section="Text" arguments="{_all}" />
         </f:case>
@@ -28,12 +28,12 @@
 
         <f:case value="50-media-50-text">
             <f:variable name="gridColumns" value="{xs:12,md:6}"/>
-            <div class="row">
+            <div class="row{f:if(condition: settings.otSitekitCeTextmedia.verticalAlign, then: ' align-items-center')}">
                 <div class="col-md-6">
                     <f:render section="Media" arguments="{_all}" />
                 </div>
                 <div class="col-md-6 mt-3 mt-md-0">
-                    <f:render partial="Header" arguments="{data: data, gridColumns: gridColumns}"/>
+                    <f:render partial="Header/All" arguments="{data: data, gridColumns: gridColumns}"/>
                     <f:render section="Text" arguments="{_all}" />
                 </div>
             </div>
@@ -41,12 +41,12 @@
 
         <f:case value="33-media-66-text">
             <f:variable name="gridColumns" value="{xs:12,md:4}"/>
-            <div class="row">
+            <div class="row{f:if(condition: settings.otSitekitCeTextmedia.verticalAlign, then: ' align-items-center')}">
                 <div class="col-md-4">
                     <f:render section="Media" arguments="{_all}" />
                 </div>
                 <div class="col-md-8 mt-3 mt-md-0">
-                    <f:render partial="Header" arguments="{data: data, gridColumns: gridColumns}"/>
+                    <f:render partial="Header/All" arguments="{data: data, gridColumns: gridColumns}"/>
                     <f:render section="Text" arguments="{_all}" />
                 </div>
             </div>
@@ -54,12 +54,12 @@
 
         <f:case value="25-media-75-text">
             <f:variable name="gridColumns" value="{xs:12,md:3}"/>
-            <div class="row">
+            <div class="row{f:if(condition: settings.otSitekitCeTextmedia.verticalAlign, then: ' align-items-center')}">
                 <div class="col-md-3">
                     <f:render section="Media" arguments="{_all}" />
                 </div>
                 <div class="col-md-9 mt-3 mt-md-0">
-                    <f:render partial="Header" arguments="{data: data, gridColumns: gridColumns}"/>
+                    <f:render partial="Header/All" arguments="{data: data, gridColumns: gridColumns}"/>
                     <f:render section="Text" arguments="{_all}" />
                 </div>
             </div>
@@ -74,12 +74,12 @@
              <f:variable name="numColumns" value="{xs:1,md:2}"/>
                 gridColumns: gridColumns,
             ]]>	--> </f:comment>
-            <div class="row">
+            <div class="row{f:if(condition: settings.otSitekitCeTextmedia.verticalAlign, then: ' align-items-center')}">
                 <div class="col-md-6 order-md-last">
                     <f:render section="Media" arguments="{_all}" />
                 </div>
                 <div class="col-md-6 order-md-first mt-3 mt-md-0">
-                    <f:render partial="Header" arguments="{data: data, gridColumns: gridColumns}"/>
+                    <f:render partial="Header/All" arguments="{data: data, gridColumns: gridColumns}"/>
                     <f:render section="Text" arguments="{_all}"/>
                 </div>
             </div>
@@ -87,12 +87,12 @@
 
         <f:case value="66-text-33-media">
             <f:variable name="gridColumns" value="{xs:12,md:4}"/>
-            <div class="row">
+            <div class="row{f:if(condition: settings.otSitekitCeTextmedia.verticalAlign, then: ' align-items-center')}">
                 <div class="col-md-4 order-md-last">
                     <f:render section="Media" arguments="{_all}" />
                 </div>
                 <div class="col-md-8 order-md-first mt-3 mt-md-0">
-                    <f:render partial="Header" arguments="{data: data, gridColumns: gridColumns}"/>
+                    <f:render partial="Header/All" arguments="{data: data, gridColumns: gridColumns}"/>
                     <f:render section="Text" arguments="{_all}"/>
                 </div>
             </div>
@@ -100,12 +100,12 @@
 
         <f:case value="75-text-25-media">
             <f:variable name="gridColumns" value="{xs:12,md:3}"/>
-            <div class="row">
+            <div class="row{f:if(condition: settings.otSitekitCeTextmedia.verticalAlign, then: ' align-items-center')}">
                 <div class="col-md-3 order-md-last">
                     <f:render section="Media" arguments="{_all}" />
                 </div>
                 <div class="col-md-9 order-md-first mt-3 mt-md-0">
-                    <f:render partial="Header" arguments="{data: data, gridColumns: gridColumns}"/>
+                    <f:render partial="Header/All" arguments="{data: data, gridColumns: gridColumns}"/>
                     <f:render section="Text" arguments="{_all}"/>
                 </div>
             </div>

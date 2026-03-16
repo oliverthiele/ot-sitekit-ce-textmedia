@@ -1,0 +1,8 @@
+categories:
+  OtSitekitCeTextmedia:
+
+settings:
+  otSitekitCeTextmedia.verticalAlign:
+    category: OtSitekitCeTextmedia
+    type: bool
+    default: false
