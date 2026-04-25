@@ -1,7 +1,7 @@
 {
 	"name": "oliverthiele/ot-sitekit-ce-textmedia",
 	"type": "typo3-cms-extension",
-	"description": "TYPO3 content element that displays an image with text. Integrates with the Sitekit and ot-irrebuttons extensions.",
+	"description": "CE Textmedia - TYPO3 content element that displays an image with text. Integrates with the Sitekit and ot-irrebuttons extensions.",
 	"homepage": "https://www.oliver-thiele.de",
 	"license": [
 		"GPL-2.0-or-later"
@@ -15,9 +15,11 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": "^13.4",
+		"php": ">=8.3",
+		"typo3/cms-core": "^13.4||^14.3",
 		"oliverthiele/ot-sitekit-base": "*",
-		"oliverthiele/ot-ceheader": "*"
+		"oliverthiele/ot-ceheader": "*",
+		"oliverthiele/ot-irrebuttons": "^4.0"
 	},
 	"require-dev": {
 		"roave/security-advisories": "dev-latest"

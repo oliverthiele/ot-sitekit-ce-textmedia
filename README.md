@@ -1,9 +1,9 @@
-# SiteKit CE Text & Media — TYPO3 content element for image + text layouts
+# OT SiteKit CE Textmedia — TYPO3 Content Element
 
-A TYPO3 content element that renders an image alongside text in configurable
-split layouts. Part of the OT SiteKit ecosystem.
+TYPO3 content element that renders an image alongside text in configurable
+split layouts for TYPO3 v13 and v14. Part of the OT SiteKit ecosystem.
 
-[![TYPO3](https://img.shields.io/badge/TYPO3-13.4-orange.svg)](https://typo3.org/)
+[![TYPO3](https://img.shields.io/badge/TYPO3-13.4%20%7C%2014.3-orange.svg)](https://typo3.org/)
 [![Packagist Version](https://img.shields.io/packagist/v/oliverthiele/ot-sitekit-ce-textmedia.svg)](https://packagist.org/packages/oliverthiele/ot-sitekit-ce-textmedia)
 [![PHP](https://img.shields.io/packagist/dependency-v/oliverthiele/ot-sitekit-ce-textmedia/php.svg)](https://php.net/)
 [![License](https://img.shields.io/packagist/l/oliverthiele/ot-sitekit-ce-textmedia.svg)](LICENSE)
@@ -33,14 +33,14 @@ split layouts. Part of the OT SiteKit ecosystem.
 
 ## Requirements
 
-| Requirement                                                                                 | Version |
-|---------------------------------------------------------------------------------------------|---------|
-| TYPO3                                                                                       | 13.4+   |
-| PHP                                                                                         | 8.3+    |
-| Bootstrap                                                                                   | 5.x     |
-| [oliverthiele/ot-sitekit-base](https://packagist.org/packages/oliverthiele/ot-sitekit-base) | *       |
-| [oliverthiele/ot-ceheader](https://packagist.org/packages/oliverthiele/ot-ceheader)         | *       |
-| [oliverthiele/ot-irrebuttons](https://packagist.org/packages/oliverthiele/ot-irrebuttons)   | *       |
+| Requirement                                                                                 | Version           |
+|---------------------------------------------------------------------------------------------|-------------------|
+| TYPO3                                                                                       | `^13.4 \| ^14.3`  |
+| PHP                                                                                         | `>=8.3`           |
+| Bootstrap                                                                                   | 5.x               |
+| [oliverthiele/ot-sitekit-base](https://packagist.org/packages/oliverthiele/ot-sitekit-base) | `*`               |
+| [oliverthiele/ot-ceheader](https://packagist.org/packages/oliverthiele/ot-ceheader)         | `*`               |
+| [oliverthiele/ot-irrebuttons](https://packagist.org/packages/oliverthiele/ot-irrebuttons)   | `^4.0`            |
 
 ---
 
