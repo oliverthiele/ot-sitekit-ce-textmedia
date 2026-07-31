@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" target-language="de" datatype="plaintext"
-        original="EXT:ot_sitekitcetextmedia/Configuration/Sets/OtSitekitcetextmedia/labels.xlf"
-        date="2026-03-16T00:00:00Z" product-name="ot-sitekit-ce-textmedia">
-    <header/>
-    <body>
-      <trans-unit id="label" resname="label">
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="de">
+  <file id="ot-sitekit-ce-textmedia-labels"
+        original="EXT:ot_sitekitcetextmedia/Configuration/Sets/OtSitekitcetextmedia/labels.xlf">
+    <unit id="label">
+      <segment>
         <source>Content Element: Text &amp; Media</source>
         <target>Inhaltselement: Text &amp; Medien</target>
-      </trans-unit>
-
-      <!-- Categories -->
-      <trans-unit id="categories.OtSitekitCeTextmedia" resname="categories.OtSitekitCeTextmedia">
+      </segment>
+    </unit>
+    <unit id="categories.OtSitekitCeTextmedia">
+      <segment>
         <source>CE Text &amp; Media</source>
         <target>CE Text &amp; Medien</target>
-      </trans-unit>
-
-      <!-- Settings -->
-      <trans-unit id="settings.otSitekitCeTextmedia.verticalAlign" resname="settings.otSitekitCeTextmedia.verticalAlign">
+      </segment>
+    </unit>
+    <unit id="settings.otSitekitCeTextmedia.verticalAlign">
+      <segment>
         <source>Vertical align text</source>
         <target>Text vertikal zentrieren</target>
-      </trans-unit>
-      <trans-unit id="settings.description.otSitekitCeTextmedia.verticalAlign" resname="settings.description.otSitekitCeTextmedia.verticalAlign">
+      </segment>
+    </unit>
+    <unit id="settings.description.otSitekitCeTextmedia.verticalAlign">
+      <segment>
         <source>Vertically center the text column when the image is taller than the text.</source>
         <target>Die Textspalte vertikal zentrieren, wenn das Bild höher als der Text ist.</target>
-      </trans-unit>
-    </body>
+      </segment>
+    </unit>
   </file>
 </xliff>

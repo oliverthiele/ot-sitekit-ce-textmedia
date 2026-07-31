@@ -7,7 +7,7 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
 
-$ll = 'LLL:EXT:ot_sitekitcetextmedia/Resources/Private/Language/locallang_db.xlf:';
+$ll = 'ot_sitekitcetextmedia.db:';
 
 $GLOBALS['TCA']['tt_content']['types']['ot_sitekitcetextmedia']['columnsOverrides'] = [
     'bodytext' => [
@@ -66,25 +66,25 @@ $GLOBALS['TCA']['tt_content']['types']['ot_sitekitcetextmedia']['columnsOverride
 ];
 
 $GLOBALS['TCA']['tt_content']['types']['ot_sitekitcetextmedia']['showitem'] = '
-    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+    --div--;core.form.tabs:general,
         --palette--;;general,
-        --palette--;;headers, bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,ot_text_columns,
-        --palette--;LLL:EXT:ot_irrebuttons/Resources/Private/Language/locallang_be.xlf:tx_otirrebuttons.palette.label;irreButtons,
+        --palette--;;headers, bodytext;frontend.ttc:bodytext_formlabel,ot_text_columns,
+        --palette--;ot_irrebuttons.be:tx_otirrebuttons.palette.label;irreButtons,
         tx_otirrebuttons_domain_model_buttons,
-    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:media,
+    --div--;core.form.tabs:media,
         --palette--;;ot-crop-variants,assets,ot_layout,
         --palette--;;imagelinks,
-    --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+    --div--;frontend.ttc:tabs.appearance,
         --palette--;;frames,
         --palette--;;appearanceLinks,
-    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
+    --div--;core.form.tabs:language,
     --palette--;;language,
-    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+    --div--;core.form.tabs:access,
         --palette--;;hidden,
         --palette--;;access,
-    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories, categories,
-    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes, rowDescription,
-    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended';
+    --div--;core.form.tabs:categories, categories,
+    --div--;core.form.tabs:notes, rowDescription,
+    --div--;core.form.tabs:extended';
 
 ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',

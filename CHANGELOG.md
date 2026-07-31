@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0] — 2026-07-31
+
+### Changed
+
+- **Breaking:** Drop TYPO3 v13 support, require TYPO3 `^14.3`
+- **Breaking:** Raise the PHP minimum to `>=8.4`
+- **Breaking:** Require `oliverthiele/ot-irrebuttons ^5.0`. The `*` wildcards
+  for `ot-sitekit-base` and `ot-ceheader` are replaced by `^1.0` and `^3.0`
+- Migrate the language files from XLIFF 1.2 to XLIFF 2.0. Unit identifiers and
+  all translations are unchanged, so no label reference needs adjusting
+- Reference labels via translation domain mapping instead of full file paths:
+  `ot_sitekitcetextmedia.db:`, `ot_irrebuttons.be:`, `core.form.tabs:` and
+  `frontend.ttc:` replace the verbose `LLL:EXT:` references
+
+### Fixed
+
+- `ext_emconf.php` listed only `ot_irrebuttons` under `depends`, while
+  `composer.json` also requires the base and header extensions. Both are now
+  declared there as well
+
+---
+
 ## [2.0.1] — 2026-07-28
 
 Maintenance release — no functional changes.

@@ -1,55 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en"
-        datatype="plaintext"
-        original="EXT:ot_sitekitcetextmedia/Resources/Private/Language/locallang_be.xlf"
-        date="2025-06-30T14:35:46Z"
-        product-name="ot-sitekit-ce-textmedia">
-    <header/>
-    <body>
-      <trans-unit id="tt_content.CType.label" resname="tt_content.CType.label">
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en">
+  <file id="ot-sitekit-ce-textmedia-locallang-db"
+        original="EXT:ot_sitekitcetextmedia/Resources/Private/Language/locallang_be.xlf">
+    <unit id="tt_content.CType.label">
+      <segment>
         <source><![CDATA[Text & Media]]></source>
-      </trans-unit>
-      <trans-unit id="tt_content.CType.description" resname="tt_content.CType.description">
+      </segment>
+    </unit>
+    <unit id="tt_content.CType.description">
+      <segment>
         <source>Displays an image next to a text.</source>
-      </trans-unit>
-      <trans-unit id="tt_content.ot_layout" resname="tt_content.ot_layout">
+      </segment>
+    </unit>
+    <unit id="tt_content.ot_layout">
+      <segment>
         <source>Layout</source>
-      </trans-unit>
-      <trans-unit id="tt_content.ot_layout.description" resname="tt_content.ot_layout.description">
+      </segment>
+    </unit>
+    <unit id="tt_content.ot_layout.description">
+      <segment>
         <source>Maximum media width in desktop resolutions.</source>
-      </trans-unit>
-      <trans-unit id="mediaTop.label" resname="mediaTop.label">
+      </segment>
+    </unit>
+    <unit id="mediaTop.label">
+      <segment>
         <source>Media Top</source>
-      </trans-unit>
-      <trans-unit id="mediaLeft.label" resname="mediaLeft.label">
+      </segment>
+    </unit>
+    <unit id="mediaLeft.label">
+      <segment>
         <source>Media Left</source>
-      </trans-unit>
-      <trans-unit id="mediaRight.label" resname="mediaRight.label">
+      </segment>
+    </unit>
+    <unit id="mediaRight.label">
+      <segment>
         <source>Media Right</source>
-      </trans-unit>
-
-      <trans-unit id="tt_content.ot_layout.100-media-100-text" resname="tt_content.ot_layout.100-media-100-text">
+      </segment>
+    </unit>
+    <unit id="tt_content.ot_layout.100-media-100-text">
+      <segment>
         <source>Media top | Text bottom</source>
-      </trans-unit>
-      <trans-unit id="tt_content.ot_layout.50-media-50-text" resname="tt_content.ot_layout.50-media-50-text">
+      </segment>
+    </unit>
+    <unit id="tt_content.ot_layout.50-media-50-text">
+      <segment>
         <source>50 % Media | 50 % Text</source>
-      </trans-unit>
-      <trans-unit id="tt_content.ot_layout.33-media-66-text" resname="tt_content.ot_layout.33-media-66-text">
+      </segment>
+    </unit>
+    <unit id="tt_content.ot_layout.33-media-66-text">
+      <segment>
         <source>⅓ Media | ⅔ Text</source>
-      </trans-unit>
-      <trans-unit id="tt_content.ot_layout.25-media-75-text" resname="tt_content.ot_layout.25-media-75-text">
+      </segment>
+    </unit>
+    <unit id="tt_content.ot_layout.25-media-75-text">
+      <segment>
         <source>25 % Media | 75 % Text</source>
-      </trans-unit>
-      <trans-unit id="tt_content.ot_layout.50-text-50-media" resname="tt_content.ot_layout.50-text-50-media">
+      </segment>
+    </unit>
+    <unit id="tt_content.ot_layout.50-text-50-media">
+      <segment>
         <source>50 % Text | 50 % Media</source>
-      </trans-unit>
-      <trans-unit id="tt_content.ot_layout.66-text-33-media" resname="tt_content.ot_layout.66-text-33-media">
+      </segment>
+    </unit>
+    <unit id="tt_content.ot_layout.66-text-33-media">
+      <segment>
         <source>⅔ Text | ⅓ Media</source>
-      </trans-unit>
-      <trans-unit id="tt_content.ot_layout.75-text-25-media" resname="tt_content.ot_layout.75-text-25-media">
+      </segment>
+    </unit>
+    <unit id="tt_content.ot_layout.75-text-25-media">
+      <segment>
         <source>75 % Text | 25 % Media</source>
-      </trans-unit>
-    </body>
+      </segment>
+    </unit>
   </file>
 </xliff>
