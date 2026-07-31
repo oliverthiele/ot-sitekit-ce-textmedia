@@ -15,11 +15,11 @@
 		}
 	],
 	"require": {
-		"php": ">=8.3",
-		"typo3/cms-core": "^13.4||^14.3",
-		"oliverthiele/ot-sitekit-base": "*",
-		"oliverthiele/ot-ceheader": "*",
-		"oliverthiele/ot-irrebuttons": "^4.0"
+		"php": ">=8.4",
+		"typo3/cms-core": "^14.3",
+		"oliverthiele/ot-sitekit-base": "^1.0",
+		"oliverthiele/ot-ceheader": "^3.0",
+		"oliverthiele/ot-irrebuttons": "^5.0"
 	},
 	"require-dev": {
 		"roave/security-advisories": "dev-latest"
