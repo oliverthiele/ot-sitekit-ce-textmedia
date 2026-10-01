@@ -33,7 +33,11 @@
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "ot_sitekitcetextmedia"
+			"extension-key": "ot_sitekitcetextmedia",
+			"version": "3.0.0",
+			"Package": {
+				"providesPackages": {}
+			}
 		}
 	}
 }
